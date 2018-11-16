@@ -10,11 +10,18 @@ function showModal(){
 };
 
 function closeModal(){
-  modal.style.display = "hide";
+  modal.style.display = "none";
 }
+
+function message(){
+  alert("Blabla");
+};
 
 popup.addEventListener("click", showModal);
 cross.addEventListener("click", closeModal);
+btn_cancel.addEventListener("click", closeModal);
+btn_uninstall.addEventListener("click", closeModal);
+btn_uninstall.addEventListener("click", message);
 
 
 window.onclick = function(event) {
@@ -23,4 +30,3 @@ window.onclick = function(event) {
   }
 };
 
-btn_cancel.addEventListener("click", closeModal);
